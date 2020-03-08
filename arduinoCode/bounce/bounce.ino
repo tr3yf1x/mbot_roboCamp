@@ -18,7 +18,7 @@
 //MeBoard myBoard(MakeblockOrion); MeBoard myBoard(mBot);
 MeLEDMatrix Matrix_1(1);
 // char string_data[] = "1234567890abcdefghijklmnop";
-char string_data[] = "x-x";
+char string_data[] = ".";
 
 int move_times = strlen(string_data) * 12;
 
@@ -39,15 +39,15 @@ void loop()
   
   while (true)
   {
-     
-      int32_t xAxis = -5;
+     // 8 yAxis 16 xAxis
+      int32_t xAxis = 1;
 
       for (int32_t yAxis = 0; yAxis < 15; yAxis++)
       {
         Matrix_1.drawStr(xAxis, yAxis, string_data);
-        xAxis ++;
+       // xAxis ++;
 
-        delay(60);
+        delay(300);
       }
     }
 }
