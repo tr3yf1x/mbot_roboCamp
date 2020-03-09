@@ -1,0 +1,65 @@
+#include <string.h>
+#include <MeMCore.h>
+
+#include <MeLEDMatrix.h>
+
+// Richtige Port-Nummer angeben!
+MeUltrasonicSensor ultraSensor(3);
+MeLEDMatrix Matrix_1(1);
+
+double messwerteSpeicher[5];
+
+void setup() {
+
+	Serial.begin(9600);
+	// zur Sicherheit die Displayhelligkeit setzen
+	Matrix_1.setBrightness(5);
+}
+
+
+void loop() {
+	double aktuellerMesswert =  ultraSensor.distanceCm();
+/*
+	if(abstandVeraendert(aktuellerMesswert))
+	{
+		Serial.println(ausgabe);
+	}
+*/
+fuegeZuMesswerteSpeicher(aktuellerMesswert);
+
+
+}
+
+// Ab und zu hat der Sensor Messfehler
+boolean abstandVeraendert(double _aktuellerMesswert)
+{
+	return true;
+}
+
+void fuegeZuMesswerteSpeicher(double _aktuellerMesswert)
+{
+	double neuerMesswerteSpeicher[sizeOf(messwerteSpeicher)];
+
+	for(int positionImBisherigenSpeicher=0; positionImBisherigenSpeicher + 1<sizeof(messwerteSpeicher);positionImBisherigenSpeicher++)
+	{
+		int positionImNeuenSpeicher = positionImBisherigenSpeicher +1;
+		neuerMesswerteSpeicher[positionImNeuenSpeicher] = messwerteSpeicher[positionImBisherigenSpeicher];
+	}
+
+	// neuen Wert an erste Stelle
+neuerMesswerteSpeicher[0] = _aktuellerMesswert;
+
+}
+
+void zeigeMesswerteSpeicher()
+{
+
+Serial.print("Messwertespeicher:");
+Serial.print("[");
+	for(int positionImMesswerteSpeicher=0;positionImMesswerteSpeicher < sizeOf(messwerteSpeicher); positionImMesswerteSpeicher++)
+{
+Serial.print(messwerteSpeicher[positionImMesswerteSpeicher]);
+Serial.print(";");
+}
+Serial.println("]");
+}

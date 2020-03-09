@@ -35,3 +35,4 @@ Hierzu wird ggf. noch das [Buzzer-Bauteil](Buzzer.md) benötigt.
 Abschluss davon:
 
  - [Parksensor (stehend)  mit Buzzer](arduinoCode/abstandsSensor/Parksensor/Parksensor.ino)
+ - [Simpler Filter](arduinoCode/abstandsSensor/Messfilter/Messfilter.ino)

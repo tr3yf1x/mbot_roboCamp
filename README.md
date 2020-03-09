@@ -19,9 +19,13 @@ LEDs auf der Platine:
 
  - Abstand anzeigen (1xmalig)
  - Abstand aktualisiert anzeigen (hier mit refreshrate rumspielen)
- - Bildschirm zeigt symbol, wenn Abstand zu klein
- - Abtastrate erhöhen, wenn Abstand kleiner wird
- - Der Roboter bittet darum, den Weg freizuräumen
+ - Unterschiede, Probleme mit MBlock
+ - Messfilter umsetzen
+
+[Buzzer](Buzzer.md):
+
+ - Einfache Tonausgabe
+ - Transfer für Parksensor
 
 Linienverfolger:
 
