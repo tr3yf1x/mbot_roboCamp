@@ -5,7 +5,9 @@ Wird kein Abstand ermittelt (d.h. der Gegenstand ist zu weit weg, oder _reflekti
 
 Der ("zuverlässige") Messbereich des Sensors ist hier _zwischen 4 cm und 30 cm_ 
 
-[Einfaches Programm mit Abstandswerten in Tabelle](mBlockStudio/Abstandsmesser/Abstandsmesser_Tabelle.mblock)
+ - [Einfaches Programm zum Anzeigen des aktuellen Abstands auf Display](mBlockStudio/Abstandsmesser/Abstandsmesser_einmalig.sb3.mblock)
+
+ - [Einfaches Programm mit Abstandswerten in Tabelle](mBlockStudio/Abstandsmesser/Abstandsmesser_Tabelle.mblock)
 
 Programmlimits:
 
@@ -19,3 +21,5 @@ In MBot-Studio?
  - [ich speichere nur "geänderte" Messdaten (d.h. wenn X-Mal aufeinander folgend 5cm gemessen werden, speichere ich es nur einmal)](mBlockStudio/Abstandsmesser/Abstandsmesser_Tabelle_nurAenderungen.mblock)
 
 In Arduino C++?
+
+ - [einfache Ausgabe des aktuellen Abstands via Serial](arduinoCode/abstandsSensor/abstandsSensorEinfacheAusgabe/abstandsSensorEinfacheAusgabe.ino)
