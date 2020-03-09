@@ -36,4 +36,11 @@ Was hat eine Programmiersprache, was ist eine Programmiersprache.
 Wichtig:
 
 Das Programm wird dann direkt nach dem Starten ausgeführt.
-Es ist wie Fahrradfahren ohne Stützräder.
+<mark>Es ist wie Fahrradfahren ohne Stützräder.</mark>
+
+
+ - [Variablenbeispiel](arduinoCode/variablenBeispiele/variablenBeispiele.ino)
+ - [Einfaches Funktionsbeispiel - Uhr](arduinoCode/simpleDisplayClock/simpleDisplayClock/simpleDisplayClock.ino)
+	- Modulo
+	- Funktionsanordnung
+	- Beginn mit einfachem Counter + Wait, Refactoren in eigene Methoden kommt dann im Laufe der Vorstellung
