@@ -26,3 +26,12 @@ In Arduino C++?
  	- [zusätzlich auf Display](arduinoCode/abstandsSensor/abstandsSensorEinfacheAusgabeDisplay/abstandsSensorEinfacheAusgabeDisplay.ino)
  	- [in Unterfunktionen aufgeräumt](arduinoCode/abstandsSensor/abstandsSensorEinfacheAusgabeDisplayAufgeraeumt/abstandsSensorEinfacheAusgabeDisplayAufgeraeumt.ino)
  - [Ausgabe nur, wenn sich der Wert ändert](arduinoCode/abstandsSensor/abstandsSensorNurWennWertGe_ndert/abstandsSensorNurWennWertGe_ndert.ino)
+ 	- [Displayhelligkeit ändert sich in Abhängigkeit zum Abstand](arduinoCode/abstandsSensor/abstandsSensorNurWennWertGeandert_Deluxe/abstandsSensorNurWennWertGeandert_Deluxe.ino)
+
+Wenn wir diese Bauteil verstanden haben, können wir es im Autokontext z.B. für einen Parksensor verwenden
+
+Hierzu wird ggf. noch das [Buzzer-Bauteil](Buzzer.md) benötigt.
+
+Abschluss davon:
+
+ - [Parksensor (stehend)  mit Buzzer](arduinoCode/abstandsSensor/Parksensor/Parksensor.ino)
