@@ -25,3 +25,4 @@ In Arduino C++?
  - [einfache Ausgabe des aktuellen Abstands via Serial](arduinoCode/abstandsSensor/abstandsSensorEinfacheAusgabe/abstandsSensorEinfacheAusgabe.ino)
  	- [zusätzlich auf Display](arduinoCode/abstandsSensor/abstandsSensorEinfacheAusgabeDisplay/abstandsSensorEinfacheAusgabeDisplay.ino)
  	- [in Unterfunktionen aufgeräumt](arduinoCode/abstandsSensor/abstandsSensorEinfacheAusgabeDisplayAufgeraeumt/abstandsSensorEinfacheAusgabeDisplayAufgeraeumt.ino)
+ - [Ausgabe nur, wenn sich der Wert ändert](arduinoCode/abstandsSensor/abstandsSensorNurWennWertGe_ndert/abstandsSensorNurWennWertGe_ndert.ino)
